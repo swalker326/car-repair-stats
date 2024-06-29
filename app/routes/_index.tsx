@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
+import { Button } from "~/components/shadcn-components/ui/button";
 
 export const meta: MetaFunction = () => {
 	return [
@@ -9,8 +10,8 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
 	return (
-		<div className="font-sans p-4">
-			<h1 className="text-3xl">Index Route</h1>
+		<div>
+			<h2 className="text-xl">Index Route</h2>
 		</div>
 	);
 }
