@@ -44,7 +44,7 @@ export async function action({ request }: ActionFunctionArgs) {
 
 type LoaderError = { message: string } | null;
 export const loader = async ({ request }: LoaderFunctionArgs) => {
-	await authenticator.isAuthenticated(request, { successRedirect: "/private" });
+	await authenticator.isAuthenticated(request, { successRedirect: "/" });
 	const session = await sessionStorage.getSession(
 		request.headers.get("Cookie"),
 	);

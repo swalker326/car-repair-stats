@@ -1,5 +1,10 @@
-export { usersTable } from "./schema/usersTable";
-export type { InsertUser, SelectUser } from "./schema/usersTable";
+import * as usersTable from "./schema/usersTable";
+import * as sessionsTable from "./schema/sessionsTable";
+
+export const schema = {
+	...usersTable,
+	...sessionsTable,
+};
 
 // export const postsTable = sqliteTable("posts", {
 // 	id: integer("id").primaryKey(),
