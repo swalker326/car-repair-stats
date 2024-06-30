@@ -10,7 +10,7 @@ export function Header() {
 					<NavLink to="/repair/create">
 						<Button>Add Repair</Button>
 					</NavLink>
-					<NavLink to="/login">Login</NavLink>
+					<NavLink to="/auth/login">Login</NavLink>
 				</ul>
 			</nav>
 		</header>
